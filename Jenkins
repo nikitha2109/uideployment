@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Deploy'
                 sh 'npm run deploy'
-                sh 'aws s3 sync dist/angular-demo/ s3://uideploy'
+                sh 'aws s3 sync dist/angular-demo/ s3://uideployment'
             }
         }
 }
